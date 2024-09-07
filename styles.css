@@ -1,0 +1,102 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e3f4f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Estilo del título y párrafo */
+h1 {
+    color: #00796b;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    color: #004d40; 
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Contenedor para el contenido del juego */
+.game-container {
+    background-color: #ffffff; 
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(35, 96, 59, 0.9);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px; 
+}
+
+/* Estilo del campo de entrada */
+input[type="number"] {
+    padding: 10px;
+    border: 2px solid #00796b; 
+    border-radius: 10px;
+    font-size: 1em;
+    width: calc(100% - 100px); 
+    margin-bottom: 20px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* Estilo del botón */
+button {
+    background-color: #00796b; 
+    color: #ffffff; 
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #004d40; 
+}
+
+button:active {
+    background-color: #90b3ad; 
+    transform: scale(1.5); 
+}
+
+/* Estilo del mensaje */
+#message {
+    font-size: 1.2em;
+    color: #ba6300; 
+    margin-top: 20px;
+}
+
+/* Media Queries responsive */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8em; 
+    }
+
+    p {
+        font-size: 1em; 
+    }
+
+    input[type="number"] {
+        font-size: 0.9em;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9em; 
+    }
+}
